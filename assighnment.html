@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A -01</title>
+</head>
+<body>
+    <h4 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: blueviolet;">Hi Vidushi </h4>
+    <h3 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: green;"> Questions Left :
+
+    </h3>
+    <h3 id="number" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: red ;"> </h3>     
+   
+
+<button type="button" onclick="add()" style="width: 20%; height: 10; background-color: aquamarine; font-size: small;" > Show Assighnment </button>
+<button type="button" onclick="addq()" style="width: 20%; height: 10; background-color: gold; font-size: small; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"> I Solve 1 Questions </button>
+<ul style="font-weight: 500; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; list-style-type: decimal; ">
+     <li id="iphone" style="margin-bottom: 20px;">
+
+    </li>
+</ul>
+<hr>
+<h3 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: green;"> Questions Solved:
+
+</h3>
+<h1 id="head" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: red;"> 0</h1>
+
+
+<script>
+    let as = ["Given an array with all integers between 1 and 100 except for one, find the missing number.","Given A arrayList convert the arraylist into array and after coverting reverse the array ","Given the stock prize of 1 to n and find the maximum profit on the day we buy or sell","Given a array of character but it contain duplicate , remove the duplicate from array","Given an array count the number of prime in that array" ,"Find the third largest element without sorting the array ","Rotate an array by 3 from last","Add one in all array element and subtract if the array element is greater than maxmum element","Delete all element from array "]
+let va = document.getElementById("iphone")
+let y = document.getElementById("android")
+let q = document.getElementById("head")
+let r = document.getElementById("number")
+let z = 0 
+let a = as.length+1
+r.innerText = a
+let body = ""
+
+function show()
+{
+
+for (let index = 0; index < as.length; index++) {
+ body+=`<li>
+${as[index]}
+ </li>`
+    va.innerHTML = body
+}
+}
+function addq()
+{
+    z = z+1;
+    a = as.length+1-z;
+    r.innerText = a
+    q.innerText = z;
+    
+    if(z==as.length+1)
+    {
+      alert("Congrats !! You solved all ❤️❤️❤️❤️❤️")
+    }
+
+}
+function add()
+{
+    
+   
+    show()
+ 
+}
+</script>
+
+</body>
+</html>
